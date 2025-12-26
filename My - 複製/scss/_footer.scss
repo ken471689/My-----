@@ -1,0 +1,12 @@
+// 頁腳樣式
+footer {
+  padding: $spacing-lg 5%;
+  background-color: $dark;
+  color: $white;
+  text-align: center;
+  font-size: 0.95rem;
+
+  p {
+    opacity: 0.9;
+  }
+}

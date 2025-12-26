@@ -1,0 +1,39 @@
+// 顏色變數
+$primary: #3a86ff;
+$secondary: #8338ec;
+$dark: #1a1a2e;
+$light: #f8f9fa;
+$gray: #6c757d;
+$light-gray: #e9ecef;
+$white: #ffffff;
+
+// 字體變數
+$font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// 尺寸變數
+$spacing-xs: 0.3rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 5rem;
+
+$border-radius-sm: 10px;
+$border-radius-md: 20px;
+$border-radius-full: 50px;
+
+// 陰影變數
+$shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+// 響應式斷點
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 992px;
+$breakpoint-desktop: 1200px;
+
+// 動畫變數
+$transition-default: 0.3s ease;
+$hover-up-distance: 10px;

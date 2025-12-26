@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的HTML/CSS作品展示 | 個人作品集</title>
+    <!-- 引入Font Awesome圖標 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入編譯後的CSS -->
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav id="main-nav">
+        <div class="logo">我的網頁開發天地</div>
+        <div class="nav-links">
+            <a href="#home">首頁</a>
+            <a href="#projects">作品</a>
+            <a href="#about">關於我</a>
+            <a href="#contact">聯繫我</a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- 英雄區 -->
+    <section id="home" class="hero">
+        <h1>我的 HTML/CSS 作品展示</h1>
+        <p>歡迎瀏覽我的作品集，這裡展示了我運用 HTML 和 CSS 開發的各種網頁作品</p>
+        <a href="#projects" class="btn btn-primary">瀏覽作品</a>
+    </section>
+
+    <!-- 作品展示區 -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">我的作品</h2>
+        <div class="projects-grid">
+            <!-- 作品1 -->
+            <div class="project-card">
+                <img src="https://picsum.photos/id/1/600/400" alt="響應式網頁設計" class="project-img">
+                <div class="project-info">
+                    <h3 class="project-title">跨平台商業網站設計</h3>
+                    <p class="project-desc">運用 HTML5 和 CSS3 等技術製作網站，支援手機、平板和電腦等多種裝置</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">響應式設計</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="./cpcwd/pag1.html"><i class="fas fa-external-link-alt"></i> 線上預覽</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 作品2 -->
+            <div class="project-card">
+                <img src="https://picsum.photos/id/20/600/400" alt="網頁表單設計" class="project-img">
+                <div class="project-info">
+                    <h3 class="project-title">色彩搭配</h3>
+                    <p class="project-desc">包含色彩意義、搭配技巧，及參考案例</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">表單設計</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> 線上預覽</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 作品3 -->
+            <div class="project-card">
+                <img src="https://picsum.photos/id/42/600/400" alt="CSS動畫效果" class="project-img">
+                <div class="project-info">
+                    <h3 class="project-title">CSS動畫展示頁</h3>
+                    <p class="project-desc">展示各種 CSS 動畫效果，包括過渡、轉換、關鍵影格動畫等</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">動畫效果</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> 線上預覽</a>
+                        <a href="#"><i class="fas fa-code"></i> 原始程式碼</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 作品4 -->
+            <div class="project-card">
+                <img src="https://picsum.photos/id/87/600/400" alt="網格佈局設計" class="project-img">
+                <div class="project-info">
+                    <h3 class="project-title">網格佈局圖片庫</h3>
+                    <p class="project-desc">運用 CSS Grid 和 Flexbox 製作的圖片展示庫，支援無限滾動和篩選功能</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS Grid</span>
+                        <span class="tag">Flexbox</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> 線上預覽</a>
+                        <a href="#"><i class="fas fa-code"></i> 原始程式碼</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我區塊 -->
+    <section id="about" class="about">
+        <h2 class="section-title">關於我</h2>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="https://picsum.photos/id/64/600/800" alt="個人照片">
+            </div>
+            <div class="about-text">
+                <h3>前端開發學習者：曾君豪</h3>
+                <p>我是一名熱愛前端開發的學習者，專注於 HTML 和 CSS 技術的學習與應用。透過不斷練習和實作，我已經掌握了響應式設計、動畫效果、網頁佈局等核心技能。</p>
+                <p>我喜歡將創意轉化為實際的網頁作品，注重使用者體驗和視覺設計的平衡。每一個作品都是我學習過程的見證，也代表著我對前端開發的熱情。</p>
+                <div class="skills">
+                    <h4>我的技能</h4>
+                    <div class="skills-grid">
+                        <div class="skill">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>響應式設計</span>
+                        </div>
+                        <div class="skill">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>UI設計</span>
+                        </div>
+                        <div class="skill">
+                            <i class="fas fa-code"></i>
+                            <span>程式碼優化</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯繫方式 -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">聯繫我</h2>
+        <div class="contact-links">
+            <a href="mailto:ken471689@gmail.com">
+                <i class="fas fa-envelope"></i>
+                <span>ken471689@gmail.com</span>
+            </a>
+            <a href="https://github.com/ken471689" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>github.com/ken471689</span>
+            </a>
+            <a href="https://www.facebook.com/junhau.zheng/?locale=zh_TW" target="_blank">
+                <i class="fab fa-facebook"></i>
+                <span>Junhau Zheng</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer>
+        <p>&copy; 2025 我的HTML/CSS作品集 | 由我設計與開發</p>
+    </footer>
+
+    <script>
+        // 手機版選單切換
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // 滾動時導航欄樣式變化
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+
+        // 點擊導航鏈接關閉手機選單
+        const navAnchor = document.querySelectorAll('.nav-links a');
+        navAnchor.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

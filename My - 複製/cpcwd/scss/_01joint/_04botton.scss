@@ -1,0 +1,60 @@
+// --------------------------
+// 1. 變數定義（方便統一修改）
+// --------------------------
+$back-to-top-color: #2c3e50; // 按鈕主色
+$back-to-top-hover-color: #34495e; // 懸浮色
+$back-to-top-size: 50px; // 桌面版尺寸
+$back-to-top-mobile-size: 45px; // 行動裝置尺寸
+$back-to-top-offset: 30px; // 桌面版邊距
+$back-to-top-mobile-offset: 20px; // 行動裝置邊距
+$transition-duration: 0.3s; // 過渡動畫時長
+$scroll-trigger: 300px; // 觸發顯示的滾動距離
+
+// --------------------------
+// 2. 混合巨集（複用響應式邏輯）
+// --------------------------
+@mixin back-to-top-size($size, $offset) {
+  width: $size;
+  height: $size;
+  line-height: $size;
+  bottom: $offset;
+  right: $offset;
+  font-size: $size * 0.4; // 字體大小隨按鈕尺寸自適應
+}
+
+.back-to-top {
+  // 基礎定位與層級
+  position: fixed;
+  @include back-to-top-size($back-to-top-size, $back-to-top-offset);
+  
+  // 外觀樣式
+  background: $back-to-top-color;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 9999;
+  -webkit-tap-highlight-color: transparent;
+  
+  // 初始隱藏 + 過渡動畫
+  opacity: 0;
+  visibility: hidden;
+  transition: all $transition-duration ease;
+
+  // 懸浮效果（巢狀）
+  &:hover {
+    background: $back-to-top-hover-color;
+    transform: translateY(-3px);
+  }
+
+  // 顯示狀態（巢狀）
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  // 響應式适配（巢狀媒體查詢）
+  @media (max-width: 768px) {
+    @include back-to-top-size($back-to-top-mobile-size, $back-to-top-mobile-offset);
+  }
+}

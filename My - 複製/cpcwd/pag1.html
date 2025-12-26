@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跨平台商業網站設計</title>
+    <link rel="stylesheet" href="scss/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="top1">跨平台商業網站設計</h1>
+        <nav>
+            <p>
+                <a href="#c1"><span>第1堂課</span></a>
+                <a href="#c2"><span>第2堂課</span></a>
+                <a href="#c3"><span>第3堂課</span></a>
+                <a href="#c4"><span>第4堂課</span></a>
+                <a href="#c5"><span>第5堂課</span></a>
+            </p>
+            <p>
+                <a href="#c6"><span>第6堂課</span></a>
+                <a href="#c7"><span>第7堂課</span></a>
+                <a href="#c8"><span>第8堂課</span></a>
+                <a href="#c9"><span>第9堂課</span></a>
+                <a href="#c10"><span>第10堂課</span></a>
+            </p>
+            <p>
+                <a href="#11"><span>第11堂課</span></a>
+                <a href="#12"><span>第12堂課</span></a>
+                <a href="#13"><span>第13堂課</span></a>
+                <a href="#14"><span>第14堂課</span></a>
+                <a href="#15"><span>第15堂課</span></a>
+            </p>
+            <p>
+                <a href=""><span>第16堂課</span></a>
+                <a href=""><span>第17堂課</span></a>
+                <a href=""><span>第18堂課</span></a>
+                <a href=""><span>第19堂課</span></a>
+                <a href=""><span>第20堂課</span></a>
+            </p>
+            <p>
+                <a href=""><span>第21堂課</span></a>
+                <a href=""><span>第22堂課</span></a>
+                <a href=""><span>第23堂課</span></a>
+                <a href=""><span>第24堂課</span></a>
+                <a href=""><span>第25堂課</span></a>
+            </p>
+
+        </nav>
+    </header>
+
+    <div class="c001">
+        <h2 id="c1">第一堂課：認識跨平台商業網站設計</h2>
+        <p id="tro">瞭解網頁的組成、開發網頁的工具、網頁測試環境建置。</p>
+        <p id="word1">重點內容：<br>
+            🔹HTML — 建立網頁骨架<br>
+            🔹CSS — 控制樣式與排版<br>
+            🔹JavaScript — 處理跟使用者之互動效果<br>
+            🔹 PHP（伺服端語言）—
+            PHP 是一種伺服端程式語言，用來製作動態網頁。 使用者開啟網站時，伺服器會處理PHP程式碼，再把結果回傳給用戶瀏覽器。 它是開源、跨平台，廣泛用於各類網站的後端開發。<br>
+            🔹 MySQL（資料庫）— MySQL 是一套常見的資料庫管理系統（DBMS）， 用於整理、管理與儲存大量網站資料。 由於其開源、快速與穩定，廣泛應用於中小型與大型網站。<br>
+            🔹 開發工具 — Visual Studio Code（VS Code）— 最常用的前端開發工具
+        </p>
+    </div>
+    <div class="c002">
+        <h2 id="c2">第二堂課： HTML</h2>
+        <p id="tro">HTML基本文件結構與CSS</p>
+        <p id="class2word">重點內容：<br>
+            🔹 HTML 文件結構 — &lt;!DOCTYPE html&gt;、&lt;html&gt;、&lt;head&gt;、&lt;body&gt; 等標籤的用途<br>
+            🔹 常用 HTML 標籤 —
+            標題（&lt;h1&gt;~&lt;h6&gt;）、段落（&lt;p&gt;）、連結（&lt;a&gt;）、圖片（&lt;img&gt;）、清單（&lt;ul&gt;、&lt;ol&gt;、&lt;li&gt;）等<br>
+            🔹 HTML 屬性 — id、class、src、href、alt 等屬性的使用方式<br>
+            🔹 CSS 基本語法 — 選擇器、屬性與值的組成方式<br>
+            🔹 內嵌 CSS 與外部 CSS 檔案的使用方法<br>
+            🔹 常用 CSS 屬性 — 字型（font-family、font-size）、顏色（color、background-color）、邊框（border）、間距（margin、padding）等<br>
+            🔹清除浮动
+        </p>
+        <table>
+            <tr>
+                <td>方法</td>
+                <td>優點</td>
+                <td>缺點</td>
+                <td>適用場景</td>
+                <td>作法</td>
+            </tr>
+            <tr>
+                <td>額外標籤法</td>
+                <td>相容所有瀏覽器</td>
+                <td>冗餘標籤</td>
+                <td>舊專案維護、極低版本瀏覽器相容</td>
+                <td>在浮動元素後加入空的區塊標籤，並設定 clear: both;</td>
+            </tr>
+            <tr>
+                <td>overflow法</td>
+                <td>程式碼簡潔</td>
+                <td>可能裁剪內容</td>
+                <td>簡單佈局、無溢出內容的場景</td>
+                <td>在父元素上設定 overflow: auto;或 overflow:hidden;</td>
+            </tr>
+            <tr>
+                <td>偽元素法</td>
+                <td>結構乾淨、無侵入</td>
+                <td>需寫 CSS 類別</td>
+                <td>絕大多數現代專案（首選）</td>
+                <td>在父元素的 CSS 中加入
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;::after {content: "";<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: block;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clear: both;}
+            </tr>
+            <tr>
+                <td>父元素浮動</td>
+                <td>臨時解決</td>
+                <td>影響後續佈局</td>
+                <td>快速測試、臨時應急</td>
+                <td>在父元素上設定 float: left;或 float: right;</td>
+            </tr>
+            <tr>
+                <td>Flex/Grid</td>
+                <td>現代佈局、靈活</td>
+                <td>低版本瀏覽器需加前綴</td>
+                <td>新專案開發、響應式佈局</td>
+                <td>使用 display: flex;或 display: grid;於父元素</td>
+            </tr>
+        </table>
+        <div class="work">
+            <p>課堂練習：</p>
+            <a href="/cpcwd/scss/_04class2/web01.html">web01</a>
+            <a href="/cpcwd/scss/_04class2/web02.html">web02</a>
+            <a href="/cpcwd/scss/_04class2/web03.html">web03</a>
+        </div>
+    </div>
+    <div class="c003">
+        <h2 id="c3">第三堂課：表格、音樂、影片、網頁</h2>
+        <p id="word3">重點內容：<br>
+            🔹 表格標籤 — &lt;table&gt;、&lt;tr&gt;(橫)、&lt;td&gt;(豎)、&lt;th&gt; 等標籤的使用<br>
+            🔹 表格屬性與樣式 — border(寬度)、align(對齊)、cellpadding、cellspacing 等屬性的使用與 CSS 樣式應用<br>
+            🔹 多媒體標籤 — &lt;audio&gt;、&lt;video&gt; 等標籤的使用<br>
+            🔹 音樂與影片屬性 — controls、autoplay、loop 等屬性的使用<br>
+        </p>
+        <div class="work">
+            <p>課堂練習：</p>
+            <a href="/cpcwd/scss/_05class3/web04.html">web04</a>
+            <a href="/cpcwd/scss/_05class3/web05.html">web05</a>
+            <a href="/cpcwd/scss/_05class3/web06.html">web06</a>
+            <a href="/cpcwd/scss/_05class3/web07.html">web07</a>
+            <a href="/cpcwd/scss/_05class3/web08.html">web08</a>
+        </div>
+    </div>
+        <div class="c004">
+            <h2 id="c4">第四堂課：CSS</h2>
+            <p id="tro">重點內容：a標籤應用與定位</p>
+            <p id="word4">
+                🔹 a 連結<br>
+                1.a :visited，點擊後<br>
+                2.a :hover，鼠標覆蓋時<br>
+                3.a :active，鼠標點擊時<br>
+                4.a :link，未點擊前<br>
+                5.a {text-decoration: none;}，去掉下劃線<br>
+                🔹 定位方式<br>
+                1.static，默認定位<br>
+                2.relative，相對定位<br>
+                3.absolute，絕對定位<br>
+                4.fixed，固定定位<br>
+                5.sticky，粘性定位<br>
+                6.z-index，層級控制<br>
+                7.position 屬性與 top、right、bottom、left 屬性的配合使用<br>
+                8.定位的應用場景，如導航欄、彈出層等<br>
+                9.定位與其他 CSS 屬性的互動，如浮動（float）、彈性盒（flexbox）等
+            </p>
+            <div class="work">
+                <p>課堂練習：</p>
+                <a href="/cpcwd/scss/_06class4/web09.html">web09</a>
+                <a href="/cpcwd/scss/_06class4/web10.html">web10</a>
+            </div>
+
+
+            <!-- 回到頂部按鈕 -->
+            <div class="back-to-top" id="backToTop">↑</div>
+            <script>
+                const backToTopBtn = document.getElementById('backToTop');
+                // 滾動監聽（觸發距離對應 SCSS 的 $scroll-trigger 變量）
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        backToTopBtn.classList.add('show');
+                    } else {
+                        backToTopBtn.classList.remove('show');
+                    }
+                });
+                // 平滑回頂功能
+                backToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@use '../_02variables.scss' as Var;
+
+@mixin Rwd($width) {
+  @if $width == xs {
+    @media (max-width: Var.$xs) {
+      @content;
+    }
+  } @else if $width == sm {
+    @media (max-width: Var.$sm) {
+      @content;
+    }
+  } @else if $width == md {
+    @media (max-width: Var.$md) {
+      @content;
+    }
+  } @else if $width == lg {
+    @media (max-width: Var.$lg) {
+      @content;
+    }
+  } @else if $width == xl {
+    @media (max-width: Var.$xl) {
+      @content;
+    }
+  } @else if $width == xxl {
+    @media (max-width: Var.$xxl) {
+      @content;
+    }
+  } @else if $width == xxxl {
+    @media (max-width: Var.$xxxl) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use '../_01joint/_02variables.scss' as Var;
+@use '../_01joint/_mixin/_01media.scss' as Rwd;
+
+
+  // 手機版375px 以下
+  @include Rwd.Rwd(xs) {
+       .c002 h2{
+               font-size: 14px;
+        }
+        #tro {
+            font-size: 11px;
+        }
+    }

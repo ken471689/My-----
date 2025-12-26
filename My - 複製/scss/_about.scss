@@ -1,0 +1,78 @@
+// 關於我區塊
+.about {
+  padding: $spacing-xxl 5%;
+  background-color: $dark;
+  color: $white;
+
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-xl;
+    align-items: center;
+    max-width: $breakpoint-desktop;
+    margin: 0 auto;
+
+    @include responsive(mobile) {
+      flex-direction: column;
+    }
+
+    .about-img {
+      flex: 1;
+      min-width: 300px;
+
+      img {
+        width: 100%;
+        border-radius: $border-radius-sm;
+        box-shadow: $shadow;
+      }
+    }
+
+    .about-text {
+      flex: 2;
+      min-width: 300px;
+
+      h3 {
+        font-size: 2rem;
+        margin-bottom: $spacing-md;
+        font-weight: $font-weight-bold;
+      }
+
+      p {
+        margin-bottom: $spacing-md;
+        color: #e0e0e0;
+        font-size: 0.95rem;
+      }
+
+      .skills {
+        margin-top: $spacing-lg;
+
+        h4 {
+          font-size: 1.2rem;
+          margin-bottom: $spacing-md;
+          font-weight: $font-weight-semibold;
+        }
+
+        .skills-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          gap: $spacing-md;
+
+          .skill {
+            @include flex-center(column);
+            gap: $spacing-xs;
+
+            i {
+              font-size: 2rem;
+              color: $primary;
+            }
+
+            span {
+              font-size: 0.9rem;
+              color: #e0e0e0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

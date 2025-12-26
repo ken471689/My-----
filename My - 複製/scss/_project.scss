@@ -1,0 +1,75 @@
+// 作品展示區
+.projects {
+  padding: $spacing-xxl 5%;
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $spacing-lg;
+  }
+
+  .project-card {
+    background-color: $white;
+    border-radius: $border-radius-sm;
+    overflow: hidden;
+    box-shadow: $shadow;
+    @include hover-up();
+
+    .project-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: $spacing-md;
+
+      .project-title {
+        font-size: 1.2rem;
+        margin-bottom: $spacing-sm;
+        color: $dark;
+        font-weight: $font-weight-semibold;
+      }
+
+      .project-desc {
+        color: $gray;
+        margin-bottom: $spacing-md;
+        font-size: 0.95rem;
+      }
+
+      .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spacing-sm;
+        margin-bottom: $spacing-md;
+
+        .tag {
+          padding: $spacing-xs 0.8rem;
+          background-color: $light-gray;
+          border-radius: $border-radius-full;
+          font-size: 0.8rem;
+          color: $gray;
+        }
+      }
+
+      .project-links {
+        display: flex;
+        gap: $spacing-md;
+
+        a {
+          color: $primary;
+          text-decoration: none;
+          font-weight: $font-weight-medium;
+          display: flex;
+          align-items: center;
+          gap: $spacing-xs;
+          transition: color $transition-default;
+
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// 英雄區樣式
+.hero {
+  height: 100vh;
+  @include flex-center(column);
+  text-align: center;
+  padding: 0 5%;
+  background: linear-gradient(135deg, $primary, $secondary);
+  color: $white;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: $spacing-md;
+
+    @include responsive(mobile) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: $spacing-lg;
+
+    @include responsive(mobile) {
+      font-size: 1rem;
+    }
+  }
+
+  .btn-primary {
+    @include button-style($white, $primary);
+  }
+}

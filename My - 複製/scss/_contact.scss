@@ -1,0 +1,34 @@
+// 聯繫方式區塊
+.contact {
+  padding: $spacing-xxl 5%;
+  text-align: center;
+
+  .contact-links {
+    @include flex-center(row);
+    gap: $spacing-lg;
+    margin-top: $spacing-lg;
+    flex-wrap: wrap;
+
+    a {
+      @include flex-center(column);
+      gap: $spacing-xs;
+      color: $dark;
+      text-decoration: none;
+      transition: color $transition-default;
+
+      &:hover {
+        color: $primary;
+      }
+
+      i {
+        font-size: 2rem;
+        margin-bottom: $spacing-xs;
+      }
+
+      span {
+        font-size: 0.95rem;
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+}

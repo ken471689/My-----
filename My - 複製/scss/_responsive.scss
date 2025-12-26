@@ -1,0 +1,33 @@
+// 響應式樣式補充
+@include responsive(mobile) {
+  // 導航欄響應式
+  .nav-links {
+    display: none !important;
+
+    &.active {
+      display: flex !important;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: $white;
+      padding: $spacing-md;
+      box-shadow: $shadow;
+      gap: $spacing-md;
+    }
+  }
+
+  .menu-toggle {
+    display: block !important;
+  }
+
+  // 其他響應式調整
+  .about-content {
+    flex-direction: column;
+  }
+
+  .project-card {
+    margin-bottom: $spacing-md;
+  }
+}

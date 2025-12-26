@@ -1,0 +1,61 @@
+@use '../_01joint/_02variables.scss' as Var;
+@use '../_01joint/_mixin/_01media.scss' as Rwd;
+
+
+  // 1800px 以下
+  @include Rwd.Rwd(xxxl) {
+    .c002 {
+            /* 全課程樣式 */
+            background-color: $background02;
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 20px;
+
+            h2 {
+                text-align: center;
+                font-size: 18px;
+                margin-top: 20px;
+                padding-top: 10px;
+            }
+
+            p {
+                text-align: center;
+            }
+
+        }
+        #tro {
+            font-size: 16px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #class2word {
+            text-align: left;
+            width: 60%;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+
+        .work{
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+        table{
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            border-collapse: collapse;
+            font-size: 14px;
+            border: solid 1px #000000;
+            td{
+                border: solid 1px #000000;
+                padding: 8px;
+                text-align: center;
+            }
+        }
+        p{
+            line-height: 1.5;
+        }
+    }

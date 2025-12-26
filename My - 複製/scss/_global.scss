@@ -1,0 +1,31 @@
+// 全域樣式重置
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-main;
+}
+
+// 基礎樣式
+body {
+  background-color: $light;
+  color: $dark;
+  line-height: 1.6;
+}
+
+// 通用區塊標題
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: $spacing-xl;
+  color: $dark;
+
+  @include responsive(mobile) {
+    font-size: 2rem;
+  }
+}
+
+// 平滑滾動
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,13 @@
+@use '../_01joint/_02variables.scss' as Var;
+@use '../_01joint/_mixin/_01media.scss' as Rwd;
+
+
+  // 平板576px 以下
+  @include Rwd.Rwd(sm) {
+        h1{
+            font-size: 23px;
+        }
+       nav p span{
+            font-size: 12px;
+       }       
+    }

@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.back-to-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  bottom: 30px;
+  right: 30px;
+  font-size: 20px;
+  background: #2c3e50;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 9999;
+  -webkit-tap-highlight-color: transparent;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.back-to-top:hover {
+  background: #34495e;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 768px) {
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 2000px) {
+  body {
+    background-color: #f4f4f4;
+  }
+  h1 {
+    margin-top: 20px;
+    color: #333;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #007BFF;
+    width: 20%;
+  }
+  span {
+    line-height: 20px; /* 行高=高度，垂直居中 */
+    text-align: center; /* 水平居中 */
+    display: block;
+    font-size: 16px;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  nav p {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 27px;
+  }
+  nav p span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  nav p span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 23px;
+  }
+  nav p span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  nav p span {
+    font-size: 11px;
+  }
+}
+@media (max-width: 2000px) {
+  .c001 {
+    /* 全課程樣式 */
+    background-color: #c4c4c4;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .c001 h2 {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .c001 p {
+    text-align: center;
+    line-height: 1.5;
+  }
+  #tro {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #word1 {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  #word1 {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .c001 h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .c001 h2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 2000px) {
+  .c002 {
+    /* 全課程樣式 */
+    background-color: #c4c4c4;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .c002 h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+  .c002 p {
+    text-align: center;
+  }
+  #tro {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #class2word {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .work {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  table {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: solid 1px #000000;
+  }
+  table td {
+    border: solid 1px #000000;
+    padding: 8px;
+    text-align: center;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+@media (max-width: 992px) {
+  .c002 h2 {
+    font-size: 16px;
+  }
+  #tro {
+    font-size: 13px;
+  }
+}
+@media (max-width: 375px) {
+  .c002 h2 {
+    font-size: 14px;
+  }
+  #tro {
+    font-size: 11px;
+  }
+}
+@media (max-width: 2000px) {
+  .c003 {
+    /* 全課程樣式 */
+    background-color: #c4c4c4;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .c003 h2 {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .c003 p {
+    text-align: center;
+  }
+  #word3 {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .c001 h2 {
+    font-size: 16px;
+  }
+  .backtotop {
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  .c001 h2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 2000px) {
+  .c004 {
+    /* 全課程樣式 */
+    background-color: #c4c4c4;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .c004 h2 {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .c004 p {
+    text-align: center;
+  }
+  #word4 {
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+#tro {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 992px) {
+  .c001 h2 {
+    font-size: 16px;
+  }
+  .backtotop {
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  .c001 h2 {
+    font-size: 14px;
+  }
+}

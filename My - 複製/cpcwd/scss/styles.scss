@@ -1,0 +1,14 @@
+//css 預處理器，設計過程能夠更加便利、有結構、更簡潔、更彈性，語法可以重覆呼叫使用
+//sass 分兩種 SASS（不寫 {} 不寫；利用縮排取代 {} 不可空白 不兼容 CSS） SCSS（一樣要寫 {} 和「;」兼容 CSS）
+// 此檔案（styles.scss）專用匯整引入檔
+// SASS / SCSS 檔名開頭為底線（_），不會編譯為 CSS 檔；可以不打副檔名，會自動抓同名的 SASS 或 SCSS 檔案
+@import"_01joint/_01reset.scss";
+@import"_01joint/_02variables.scss";
+@import"_01joint/_03mixins.scss";
+@import"_01joint/_mixin/_01media.scss";
+@import"_01joint/_04botton.scss";
+@import"_02header/01headers.scss";
+@import"_03class1/_01class1.scss";
+@import"_04class2/_01class2.scss";
+@import"_05class3/_01class3.scss";
+@import"_06class4/_01class4.scss";

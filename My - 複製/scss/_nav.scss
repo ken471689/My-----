@@ -1,0 +1,48 @@
+// 導航欄樣式
+nav {
+  background-color: $white;
+  box-shadow: $shadow;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: $spacing-md 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: padding $transition-default;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: $font-weight-bold;
+    color: $primary;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: $spacing-lg;
+
+    a {
+      text-decoration: none;
+      color: $dark;
+      font-weight: $font-weight-medium;
+      transition: color $transition-default;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $dark;
+  }
+}
+
+// 滾動後導航欄樣式
+.nav-scrolled {
+  padding: 0.8rem 5%;
+}

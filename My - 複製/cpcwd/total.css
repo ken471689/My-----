@@ -1,0 +1,37 @@
+        .c001 {
+            /* 全課程樣式 */
+            border: solid;
+            margin-top: 20px;
+            background-color: rgb(212, 210, 210);
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+
+        }
+
+        #word1 {
+            text-align: left;
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .backtotop {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+            margin-right: 50px;
+            text-decoration: none;
+
+            a {
+                color: rgb(61, 36, 206);
+            }
+
+            a:hover {
+                color: #e91717;
+            }
+        }
